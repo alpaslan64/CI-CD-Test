@@ -18,14 +18,14 @@
 
     - name: Pull Docker image from Docker Hub
       docker_image:
-        name: "{{ docker_username }}/myapp:latest"
+        name: "alpaslant/myapp:latest"
         source: pull
       become: yes
 
     - name: Run Docker container
       docker_container:
         name: myapp
-        image: "{{ docker_username }}/myapp:latest"
+        image: "alpaslant/myapp:latest"
         state: started
         restart_policy: always
         ports:
