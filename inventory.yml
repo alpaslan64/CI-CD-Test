@@ -1,0 +1,9 @@
+[kali]
+192.168.111.130 ansible_user=root ansible_password=alpaslan3264 ansible_port=22 ansible_become=true
+
+[ubuntu]
+192.168.111.131 ansible_user=root ansible_password=12345 ansible_port=22 ansible_become=true
+
+[targets:children]
+kali
+ubuntu
