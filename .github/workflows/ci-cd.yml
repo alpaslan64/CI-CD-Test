@@ -55,7 +55,7 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y ansible
-        pip install docker  # Ansible'ın docker modülleri için python3-docker bağımlılığı
+        pip install docker 
 
     - name: Ansible playbook'u çalıştır
       env:

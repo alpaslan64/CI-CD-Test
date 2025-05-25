@@ -4,7 +4,7 @@
   tasks:
     - name: Stop and remove existing container
       command: docker rm -f myapp
-      become: yes
+      become: yes 
       ignore_errors: yes  
 
     - name: Remove old Docker image
