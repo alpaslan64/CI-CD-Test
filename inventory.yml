@@ -1,5 +1,5 @@
 [kali]
-0.tcp.eu.ngrok.io ansible_user=root ansible_password=12345 ansible_port=17250 ansible_become=true ansible_ssh_common_args='-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
+192.168.111.130 ansible_user=root ansible_password=gizli ansible_port=22 ansible_become=true ansible_ssh_common_args='-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
 
 [targets:children]
 kali
